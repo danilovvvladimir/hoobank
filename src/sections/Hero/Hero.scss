@@ -1,0 +1,121 @@
+@import "../../assets/styles/variables.scss";
+
+.hero {
+  padding-top: 255px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-color: #0f101d;
+  position: relative;
+  overflow: hidden;
+  &__content {
+  }
+  &__title {
+    font-size: 72px;
+    line-height: 140%;
+    max-width: 670px;
+    letter-spacing: 0.01em;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    max-width: 483px;
+    margin-bottom: 140px;
+  }
+  &__discount {
+    color: #a4a4a7;
+    display: inline-block;
+    padding: 6px 10px 7px 50px;
+    background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 150%;
+    position: relative;
+    margin-bottom: 16px;
+    span {
+      color: #fff;
+    }
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../assets/images/icons/discount.svg);
+      background-repeat: no-repeat;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info-item {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    &-number {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 130%;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      @extend %accent;
+    }
+  }
+  &__imagebox {
+    position: absolute;
+    top: 220px;
+
+    right: 0;
+  }
+  &__main-img {
+    position: relative;
+    width: 1000px;
+    z-index: 5;
+  }
+  &__cards-img {
+    top: -70px;
+    position: absolute;
+    right: 300px;
+    z-index: 4;
+  }
+  &__robot-light-img {
+    position: absolute;
+    top: -150px;
+  }
+  &__decoration {
+    position: absolute;
+
+    &--left {
+      width: 195px;
+      height: 324px;
+      left: -65px;
+      top: 252px;
+      background: #ffffff;
+      filter: blur(225px);
+    }
+    &--right {
+      width: 482px;
+      height: 615px;
+      right: -200px;
+      top: 150px;
+      background: linear-gradient(
+        90deg,
+        rgba(26, 41, 128, 0.5) 0%,
+        rgba(38, 208, 206, 0.5) 100%
+      );
+      filter: blur(325px);
+      border-radius: 200px;
+      transform: rotate(-67.37deg);
+    }
+  }
+}
+
+.accent {
+  @extend %accent;
+}

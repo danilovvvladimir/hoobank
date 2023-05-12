@@ -1,0 +1,45 @@
+.header {
+  padding: 30px 0;
+  // background-color: #10111d;
+
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+  &__list-item {
+    position: relative;
+    &--active {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+  &__list-item-link {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 130%;
+    transition: all 0.5s ease;
+  }
+}
+
+.active-line {
+  position: absolute;
+  bottom: -6px;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+}
