@@ -1,6 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
 import React, { FC } from "react";
-import { slideFromX } from "../../utils/FMvariants";
 
 interface IBenefitsContentBlockProps {
   title: string;

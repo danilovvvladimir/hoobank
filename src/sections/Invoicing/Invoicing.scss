@@ -1,0 +1,50 @@
+.invoicing {
+  background-color: #0f101d;
+  padding-top: 170px;
+  padding-bottom: 30px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__imagebox {
+  }
+  &__paypal {
+    padding: 20px;
+    background: linear-gradient(110.53deg, #ffffff -265.46%, #14101d 96.75%);
+    box-shadow: 4px 6px 30px rgba(19, 36, 46, 0.25);
+    border-radius: 10px;
+  }
+  &__paypal-text {
+    padding-left: 67px;
+    color: #fff;
+    position: relative;
+    &::before {
+      content: "";
+      width: 56px;
+      height: 56px;
+      background-image: url(../../assets/images/icons/paypal.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__paypal-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+  }
+  &__paypal-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
