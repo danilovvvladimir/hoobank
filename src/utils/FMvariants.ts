@@ -72,3 +72,23 @@ export const slideFadeUpVariant = (delay: number, duration: number) => ({
     },
   },
 });
+
+export const slideFromX = ({
+  direction = "left",
+  distance = 50,
+  duration = 1,
+}): any => ({
+  hidden: {
+    x: direction === "left" ? -distance : distance,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      duration: duration,
+      ease: "easeInOut",
+    },
+  },
+});

@@ -7,7 +7,6 @@ import robotLightIMG from "../../assets/images/decorations/robot-light.svg";
 
 import "./Hero.scss";
 import {
-  // cardsMoving,
   cardsVariant,
   robotHandVariant,
   slideFadeUpVariant,
@@ -51,13 +50,13 @@ const Hero: FC = () => {
               <div className="hero__info-item-title">User Active</div>
             </motion.div>
             <motion.div
-              variants={slideFadeUpVariant(0.8, 1.5)}
+              variants={slideFadeUpVariant(1, 1.5)}
               initial="hidden"
               animate="visible">
               |
             </motion.div>
             <motion.div
-              variants={slideFadeUpVariant(0.9, 1.5)}
+              variants={slideFadeUpVariant(1.2, 1.5)}
               initial="hidden"
               animate="visible"
               className="hero__info-item">
@@ -65,13 +64,13 @@ const Hero: FC = () => {
               <div className="hero__info-item-title">TRUSTED BY COMPANY</div>
             </motion.div>
             <motion.div
-              variants={slideFadeUpVariant(1, 1.5)}
+              variants={slideFadeUpVariant(1.5, 1.5)}
               initial="hidden"
               animate="visible">
               |
             </motion.div>
             <motion.div
-              variants={slideFadeUpVariant(1.1, 1.5)}
+              variants={slideFadeUpVariant(1.8, 1.5)}
               initial="hidden"
               animate="visible"
               className="hero__info-item">

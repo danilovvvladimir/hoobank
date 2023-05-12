@@ -1,0 +1,16 @@
+@import "../../assets/styles/variables.scss";
+
+.btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  background: $accent-gradient-button;
+  padding: 19px 33px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    filter: saturate(200%);
+  }
+}
