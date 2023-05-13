@@ -1,0 +1,33 @@
+.service {
+  padding-top: 70px;
+  padding-bottom: 82px;
+  background-color: #0f101d;
+  &__wrapper {
+    padding: 72px 100px;
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    max-width: 445px;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+  }
+}

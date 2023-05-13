@@ -8,7 +8,7 @@ import "./Feedback.scss";
 
 const Feedback: FC = () => {
   return (
-    <section className="feedback">
+    <section className="feedback" id="features">
       <div className="container">
         <div className="feedback__top">
           <h2 className="feedback__title">What people are saying about us</h2>

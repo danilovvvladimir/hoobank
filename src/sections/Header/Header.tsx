@@ -7,6 +7,7 @@ import "./Header.scss";
 
 const Header: FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+
   return (
     <header className="header">
       <div className="container">
@@ -22,7 +23,7 @@ const Header: FC = () => {
                   }`}
                   onClick={() => setActiveIndex(index)}>
                   <a
-                    href={`#${item.title.toLowerCase()}`}
+                    href={`#${item.url.toLowerCase()}`}
                     className="menu__list-item-link">
                     {activeIndex === index && <ActiveLine />}
                     {item.title}

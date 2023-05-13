@@ -12,6 +12,7 @@ import dropboxIMG from "../assets/images/testimonials/companies/dropbox.svg";
 interface IMenuItem {
   title: string;
   id: number;
+  url: string;
 }
 export interface IBenefitsContentBlock {
   title: string;
@@ -19,23 +20,11 @@ export interface IBenefitsContentBlock {
   id: number;
 }
 
-type SvgIcon = {
-  width: string;
-  height: string;
-  viewBox: string;
-  fill: string;
-  xmlns: string;
-  path: {
-    d: string;
-    fill: string;
-  };
-};
-
 export const menuItems: IMenuItem[] = [
-  { title: "Home", id: 1 },
-  { title: "About Us", id: 2 },
-  { title: "Features", id: 3 },
-  { title: "Solution", id: 4 },
+  { title: "Home", id: 1, url: "hero" },
+  { title: "About Us", id: 2, url: "benefits" },
+  { title: "Features", id: 3, url: "features" },
+  { title: "Solution", id: 4, url: "service" },
 ];
 
 export const benefitsContentBlocks: IBenefitsContentBlock[] = [
@@ -153,4 +142,31 @@ export const companies: ICompany[] = [
     name: "dropbox",
     image: dropboxIMG,
   },
+];
+
+interface ILink {
+  title: string;
+  id: number;
+  url: string;
+}
+
+export const usefulLinks: ILink[] = [
+  { title: "Content", id: 1, url: "http://google.com" },
+  { title: "How it Works", id: 2, url: "http://google.com" },
+  { title: "Create", id: 3, url: "http://google.com" },
+  { title: "Explore", id: 4, url: "http://google.com" },
+  { title: "Terms & Services", id: 5, url: "http://google.com" },
+];
+
+export const communityLinks: ILink[] = [
+  { title: "Help Center", id: 1, url: "http://google.com" },
+  { title: "Partners", id: 2, url: "http://google.com" },
+  { title: "Suggestions", id: 3, url: "http://google.com" },
+  { title: "Blog", id: 4, url: "http://google.com" },
+  { title: "Newsletters", id: 5, url: "http://google.com" },
+];
+
+export const partnerLinks: ILink[] = [
+  { title: "Our Partner", id: 1, url: "http://google.com" },
+  { title: "Become a Partner", id: 2, url: "http://google.com" },
 ];

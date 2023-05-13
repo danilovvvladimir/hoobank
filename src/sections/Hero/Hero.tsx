@@ -14,7 +14,7 @@ import {
 
 const Hero: FC = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="container">
         <div className="hero__content">
           <motion.div

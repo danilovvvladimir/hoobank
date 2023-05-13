@@ -16,7 +16,7 @@ const Benefits: FC = () => {
   console.log("rerendered");
 
   return (
-    <section className="benefits">
+    <section className="benefits" id="benefits">
       <div className="container">
         <div className="benefits__wrapper">
           <motion.div
