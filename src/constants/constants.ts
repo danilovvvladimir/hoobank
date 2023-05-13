@@ -2,6 +2,13 @@ import iconStar from "../assets/images/icons/star.svg";
 import iconShield from "../assets/images/icons/shield.svg";
 import iconPlane from "../assets/images/icons/plane.svg";
 
+import userIMG from "../assets/images/testimonials/mark.jpg";
+
+import airbnbIMG from "../assets/images/testimonials/companies/airbnb.svg";
+import binanceIMG from "../assets/images/testimonials/companies/binance.svg";
+import coinbaseIMG from "../assets/images/testimonials/companies/coinbase.svg";
+import dropboxIMG from "../assets/images/testimonials/companies/dropbox.svg";
+
 interface IMenuItem {
   title: string;
   id: number;
@@ -80,5 +87,70 @@ export const benefitsTriggers: IBenefitsTrigger[] = [
     subtitle:
       "A balance transfer credit card can save you a lot of money in interest charges.",
     id: 3,
+  },
+];
+
+interface ITestimonial {
+  id: number;
+  message: string;
+  name: string;
+  position: string;
+  image: string;
+}
+
+export const testimonials: ITestimonial[] = [
+  {
+    id: 1,
+    message:
+      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+    name: "Herman Jensen",
+    position: "Founder & Leader",
+    image: userIMG,
+  },
+  {
+    id: 2,
+    message:
+      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    name: "Steve Mark",
+    position: "Founder & Leader",
+    image: userIMG,
+  },
+  {
+    id: 3,
+    message:
+      "It is usually people in the money business, finance, and international trade that are really rich.",
+    name: "Kenn Gallagher",
+    position: "Founder & Leader",
+    image: userIMG,
+  },
+];
+
+interface ICompany {
+  id: number;
+  name: string;
+  image: string;
+}
+
+export const companies: ICompany[] = [
+  {
+    id: 1,
+
+    name: "airbnb",
+    image: airbnbIMG,
+  },
+  {
+    id: 2,
+    name: "binance",
+    image: binanceIMG,
+  },
+  {
+    id: 3,
+    name: "coinbase",
+    image: coinbaseIMG,
+  },
+  {
+    id: 4,
+    name: "dropbox",
+    image: dropboxIMG,
   },
 ];

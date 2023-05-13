@@ -115,3 +115,19 @@ export const slideFromY = ({
     },
   },
 });
+export const testimonialsVariant = (i: number) => ({
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.5,
+      duration: 1,
+      type: "tween",
+      ease: "easeInOut",
+    },
+  },
+});

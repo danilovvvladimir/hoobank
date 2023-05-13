@@ -17,7 +17,7 @@ const Deal: FC = () => {
             })}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.2, once: false }}
+            viewport={{ amount: 0.2, once: true }}
             className="deal__content">
             <h2 className="deal__title">
               Find a better card deal in few easy steps.
@@ -37,7 +37,7 @@ const Deal: FC = () => {
             })}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.2, once: false }}
+            viewport={{ amount: 0.2, once: true }}
             className="deal__imagebox">
             <img src={dealIMG} className="deal__image" alt="deal-about" />
           </motion.div>

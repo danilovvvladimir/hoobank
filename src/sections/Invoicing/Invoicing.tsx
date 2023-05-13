@@ -22,7 +22,7 @@ const Invoicing: FC = () => {
               })}
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.2, once: false }}
+              viewport={{ amount: 0.2, once: true }}
               className="invoicing__paypal">
               <div className="invoicing__paypal-text">
                 <h4 className="invoicing__paypal-title">Paypal</h4>
@@ -48,7 +48,7 @@ const Invoicing: FC = () => {
               })}
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.2, once: false }}
+              viewport={{ amount: 0.2, once: true }}
               className="invoicing__transactions">
               <h4 className="invoicing__transactions-title">
                 Last Transaction
@@ -104,7 +104,7 @@ const Invoicing: FC = () => {
               })}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="invoicing__notification">
               Great! Your Payment is succesfully.
             </motion.div>
@@ -113,7 +113,7 @@ const Invoicing: FC = () => {
             variants={slideFromX({ direction: "right", distance: 100 })}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.2, once: false }}
+            viewport={{ amount: 0.2, once: true }}
             className="invoicing__content">
             <h2 className="invoicing__title">
               Easily control your billing & invoicing.

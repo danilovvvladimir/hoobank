@@ -23,7 +23,7 @@ const Benefits: FC = () => {
             variants={slideFromX({ direction: "left", distance: 100 })}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.05, once: false }}
+            viewport={{ amount: 0.05, once: true }}
             className="benefits__content">
             <BenefitsContentBlock
               {...benefitsContentBlocks[activeBlockIndex]}
@@ -34,7 +34,7 @@ const Benefits: FC = () => {
             variants={slideFromX({ direction: "right", distance: 100 })}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.05, once: false }}
+            viewport={{ amount: 0.05, once: true }}
             className="benefits__triggers">
             {benefitsTriggers.map((trigger, index) => (
               <BenefitsTrigger
