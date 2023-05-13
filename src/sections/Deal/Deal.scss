@@ -1,0 +1,28 @@
+.deal {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  background-color: #0f101d;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    max-width: 570px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 0.01em;
+    margin-bottom: 17px;
+  }
+}

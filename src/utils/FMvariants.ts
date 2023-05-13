@@ -77,6 +77,7 @@ export const slideFromX = ({
   direction = "left",
   distance = 50,
   duration = 1,
+  delay = 0,
 }): any => ({
   hidden: {
     x: direction === "left" ? -distance : distance,
@@ -86,6 +87,28 @@ export const slideFromX = ({
     x: 0,
     opacity: 1,
     transition: {
+      delay: delay,
+      type: "tween",
+      duration: duration,
+      ease: "easeInOut",
+    },
+  },
+});
+export const slideFromY = ({
+  direction = "up",
+  distance = 50,
+  duration = 1,
+  delay = 0,
+}): any => ({
+  hidden: {
+    y: direction === "up" ? distance : -distance,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: delay,
       type: "tween",
       duration: duration,
       ease: "easeInOut",
