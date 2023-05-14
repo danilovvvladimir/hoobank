@@ -4,7 +4,11 @@ import Button from "../../components/Button/Button";
 import "./Deal.scss";
 import dealIMG from "../../assets/images/deal-img.svg";
 import { slideFromY } from "../../utils/FMvariants";
-const Deal: FC = () => {
+interface DealProps {
+  setIsModalActive: (state: boolean) => void;
+}
+
+const Deal: FC<DealProps> = ({ setIsModalActive }) => {
   return (
     <section className="deal">
       <div className="container">
@@ -26,7 +30,7 @@ const Deal: FC = () => {
               Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
               aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
             </p>
-            <Button>Get Started</Button>
+            <Button onClick={setIsModalActive}>Get Started</Button>
           </motion.div>
           <motion.div
             variants={slideFromY({

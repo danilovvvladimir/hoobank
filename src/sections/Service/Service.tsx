@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { FC } from "react";
 import Button from "../../components/Button/Button";
 
 import "./Service.scss";
-const Service = () => {
+interface ServiceProps {
+  setIsModalActive: (state: boolean) => void;
+}
+
+const Service: FC<ServiceProps> = ({ setIsModalActive }) => {
   return (
     <section className="service" id="service">
       <div className="container">
@@ -15,7 +19,9 @@ const Service = () => {
               anywhere on the planet.
             </p>
           </div>
-          <Button extraClassName="service__btn">Get Started</Button>
+          <Button onClick={setIsModalActive} extraClassName="service__btn">
+            Get Started
+          </Button>
         </div>
       </div>
     </section>

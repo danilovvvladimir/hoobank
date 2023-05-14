@@ -11,7 +11,11 @@ import { slideFromX } from "../../utils/FMvariants";
 
 import "./Benefits.scss";
 
-const Benefits: FC = () => {
+interface BenefitsProps {
+  setIsModalActive: (state: boolean) => void;
+}
+
+const Benefits: FC<BenefitsProps> = ({ setIsModalActive }) => {
   const [activeBlockIndex, setActiveBlockIndex] = useState<number>(0);
   console.log("rerendered");
 
@@ -28,7 +32,11 @@ const Benefits: FC = () => {
             <BenefitsContentBlock
               {...benefitsContentBlocks[activeBlockIndex]}
             />
-            <Button extraClassName="benefits__content-btn">Get Started</Button>
+            <Button
+              onClick={setIsModalActive}
+              extraClassName="benefits__content-btn">
+              Get Started
+            </Button>
           </motion.div>
           <motion.div
             variants={slideFromX({ direction: "right", distance: 100 })}
